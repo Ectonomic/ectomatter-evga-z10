@@ -1,0 +1,287 @@
+// EVGA Z10 RGB: the keyboard as Ectomatter draws and lights it.
+// JSON with comments. Lengths are in millimeters, brightness in nits.
+{
+  "name": "EVGA Z10 RGB",
+  // what sort of device it is, for Ectomatter's words about it (its lab: the Keyboard lab)
+  "kind": "keyboard",
+  "art": "art/z10.svg",
+  // the part of the drawing the keyboard's page shows (x, y, width, height),
+  // and the order its controls' groups are listed in (each control's "group")
+  "view": [6, -2, 649, 260],
+  "groups": ["Buttons", "Macro keys", "F-keys", "Number row", "Letters and symbols", "Modifiers and space", "Navigation", "Number pad"],
+
+  // How the keys' legends are printed, for setting them anew from each
+  // key's "print" (the Key lab's Legends section): the typeface they are
+  // printed in, Orbitron from Ectomatter's own typefaces, the open look-alike
+  // of the Z10's own Conthrax, which Ectomatter may not carry; the one for the
+  // signs it lacks (in fonts/); the typeface the drawing's legends are drawn
+  // in ("art", in fonts/), which Ectomatter sets anew, and the sizes it drew
+  // them at, larger than the keyboard's own; signs the typeface
+  // draws otherwise than the keys print them ("swap": Orbitron's zero is
+  // slashed, its O is the plain zero); how tall a legend of one letter or
+  // sign is and a legend of words (a capital's height, as measured on the
+  // keyboard itself from TechPowerUp's photographs); how far down from
+  // the top edge of a cap's top a one-letter legend starts; and the icons,
+  // each drawn on a 24-unit square, "size" times as tall as its capitals
+  // would be and "drop" times them below its line.
+  "print": {
+    "typeface": "Orbitron", "weight": 600, "symbols": "Z10 Symbols",
+    "art": { "typeface": "Barlow Semi Condensed", "weight": 600, "letters": 3.786, "words": 2.568, "inset": 2.022 },
+    "swap": { "0": "O" },
+    "fonts": ["fonts/BarlowSemiCondensed-SemiBold.ttf", "fonts/Z10Symbols-Bold.ttf"],
+    "letters": 2.8, "words": 1.9, "inset": 2.022,
+    "icons": { "mute": { "fill": "M3 9h4l5-4v14l-5-4H3z", "stroke": "M16 9l6 6M22 9l-6 6", "width": 2, "size": 1.92, "drop": 0.15 } }
+  },
+
+
+  // Every key, button and roller. "id" names it everywhere else in this
+  // file; "pos" is its place in the keyboard's own reports; "art" is its
+  // piece in the drawing, control_<art>. A key's legend and light are the
+  // drawing's legend_<100 + art> and illumination_<art>, <200 + art> and
+  // <400 + art>. "lit": false is a key with no LED of its own. "box" is
+  // where it sits on the keyboard's page (x, y, width, height, in the
+  // drawing's units: EVGA's own editor's, its outline and where it's pressed),
+  // "group" the heading it's listed under in the Key library, and "short"
+  // the cap it has there. "molded": true is a button molded into the case,
+  // with no cap of its own (the media buttons).
+  // "print" is what its cap has printed on it, a part at a time: its own
+  // legend, its shifted sign beside it ("shift") and its second function
+  // at its foot ("second"), each its words or one of the icons above;
+  // "scale" a sign printed larger than the rest. "centered": true is a key
+  // whose legend sits in the middle of its cap.
+  "controls": [
+    { "id": "esc",           "label": "Escape",           "pos": 1,   "art": 1, "print": [{ "text": "ESC" }], "box": [54, 60, 27, 27], "group": "F-keys", "short": "Esca" },
+    { "id": "f1",            "label": "F1",               "pos": 2,   "art": 2, "print": [{ "text": "F1" }, { "icon": "mute", "role": "second" }], "box": [97, 60, 27, 27], "group": "F-keys", "short": "F1" },
+    { "id": "f2",            "label": "F2",               "pos": 3,   "art": 3, "print": [{ "text": "F2" }], "box": [123, 60, 27, 27], "group": "F-keys", "short": "F2" },
+    { "id": "f3",            "label": "F3",               "pos": 4,   "art": 4, "print": [{ "text": "F3" }], "box": [149, 60, 27, 27], "group": "F-keys", "short": "F3" },
+    { "id": "f4",            "label": "F4",               "pos": 5,   "art": 5, "print": [{ "text": "F4" }], "box": [175, 60, 27, 27], "group": "F-keys", "short": "F4" },
+    { "id": "f5",            "label": "F5",               "pos": 6,   "art": 6, "print": [{ "text": "F5" }], "box": [218, 60, 27, 27], "group": "F-keys", "short": "F5" },
+    { "id": "f6",            "label": "F6",               "pos": 7,   "art": 7, "print": [{ "text": "F6" }], "box": [244, 60, 27, 27], "group": "F-keys", "short": "F6" },
+    { "id": "f7",            "label": "F7",               "pos": 8,   "art": 8, "print": [{ "text": "F7" }], "box": [270, 60, 27, 27], "group": "F-keys", "short": "F7" },
+    { "id": "f8",            "label": "F8",               "pos": 9,   "art": 9, "print": [{ "text": "F8" }], "box": [296, 60, 27, 27], "group": "F-keys", "short": "F8" },
+    { "id": "f9",            "label": "F9",               "pos": 10,  "art": 10, "print": [{ "text": "F9" }], "box": [339, 60, 27, 27], "group": "F-keys", "short": "F9" },
+    { "id": "f10",           "label": "F10",              "pos": 11,  "art": 11, "print": [{ "text": "F10" }], "box": [365, 60, 27, 27], "group": "F-keys", "short": "F10" },
+    { "id": "f11",           "label": "F11",              "pos": 12,  "art": 12, "print": [{ "text": "F11" }], "box": [391, 60, 27, 27], "group": "F-keys", "short": "F11" },
+    { "id": "f12",           "label": "F12",              "pos": 13,  "art": 13, "print": [{ "text": "F12" }, { "text": "6/N", "role": "second" }], "box": [417, 60, 27, 27], "group": "F-keys", "short": "F12" },
+    { "id": "print-screen",  "label": "Print Screen",     "pos": 14,  "art": 14, "print": [{ "text": "PRINT" }, { "text": "SCREEN" }], "box": [450, 60, 27, 27], "group": "F-keys", "short": "Prin" },
+    { "id": "scroll-lock",   "label": "Scroll Lock",      "pos": 15,  "art": 15, "print": [{ "text": "SCROLL" }, { "text": "LOCK" }], "box": [476, 60, 27, 27], "group": "F-keys", "short": "Scro" },
+    { "id": "pause",         "label": "Pause/Break",      "pos": 16,  "art": 16, "print": [{ "text": "PAUSE" }, { "text": "BREAK" }], "box": [502, 60, 27, 27], "group": "F-keys", "short": "Paus" },
+    { "id": "gpc",           "label": "Game mode button", "pos": 0,   "art": 17, "short": "G/PC", "lit": false, "box": [25.99, 62.01, 16.4, 16.4], "group": "Buttons" },
+    { "id": "stop",          "label": "Media stop",       "pos": 17,  "art": 18, "short": "Stop", "lit": false, "molded": true, "box": [536.52, 64.29, 21.96, 9.56], "group": "Buttons" },
+    { "id": "previous",      "label": "Previous track",   "pos": 18,  "art": 19, "short": "Prev", "lit": false, "molded": true, "box": [562.52, 64.29, 21.96, 9.56], "group": "Buttons" },
+    { "id": "play",          "label": "Play/pause",       "pos": 19,  "art": 20, "short": "Play", "lit": false, "molded": true, "box": [588.52, 64.29, 21.96, 9.56], "group": "Buttons" },
+    { "id": "next",          "label": "Next track",       "pos": 20,  "art": 21, "short": "Next", "lit": false, "molded": true, "box": [614.52, 64.29, 21.96, 9.56], "group": "Buttons" },
+    { "id": "e1",            "label": "E1",               "pos": 21,  "art": 22, "print": [{ "text": "E1" }], "box": [22, 93, 27, 27], "group": "Macro keys", "short": "E1" },
+    { "id": "grave",         "label": "Grave accent",     "pos": 22,  "art": 23, "print": [{ "text": "`", "scale": 1.22 }, { "text": "~", "role": "shift", "scale": 1.22 }], "box": [53, 93, 27, 27], "group": "Number row", "short": "Grav" },
+    { "id": "1",             "label": "1",                "pos": 23,  "art": 24, "print": [{ "text": "1" }, { "text": "!", "role": "shift" }, { "text": "PF1", "role": "second" }], "box": [79, 93, 27, 27], "group": "Number row", "short": "1" },
+    { "id": "2",             "label": "2",                "pos": 24,  "art": 25, "print": [{ "text": "2" }, { "text": "@", "role": "shift" }, { "text": "PF2", "role": "second" }], "box": [105, 93, 27, 27], "group": "Number row", "short": "2" },
+    { "id": "3",             "label": "3",                "pos": 25,  "art": 26, "print": [{ "text": "3" }, { "text": "#", "role": "shift" }, { "text": "PF3", "role": "second" }], "box": [131, 93, 27, 27], "group": "Number row", "short": "3" },
+    { "id": "4",             "label": "4",                "pos": 26,  "art": 27, "print": [{ "text": "4" }, { "text": "$", "role": "shift" }, { "text": "PF4", "role": "second" }], "box": [157, 93, 27, 27], "group": "Number row", "short": "4" },
+    { "id": "5",             "label": "5",                "pos": 27,  "art": 28, "print": [{ "text": "5" }, { "text": "%", "role": "shift" }, { "text": "PF5", "role": "second" }], "box": [183, 93, 27, 27], "group": "Number row", "short": "5" },
+    { "id": "6",             "label": "6",                "pos": 28,  "art": 29, "print": [{ "text": "6" }, { "text": "^", "role": "shift", "scale": 1.22 }], "box": [209, 93, 27, 27], "group": "Number row", "short": "6" },
+    { "id": "7",             "label": "7",                "pos": 29,  "art": 30, "print": [{ "text": "7" }, { "text": "&", "role": "shift" }], "box": [235, 93, 27, 27], "group": "Number row", "short": "7" },
+    { "id": "8",             "label": "8",                "pos": 30,  "art": 31, "print": [{ "text": "8" }, { "text": "*", "role": "shift", "scale": 1.22 }], "box": [261, 93, 27, 27], "group": "Number row", "short": "8" },
+    { "id": "9",             "label": "9",                "pos": 31,  "art": 32, "print": [{ "text": "9" }, { "text": "(", "role": "shift" }], "box": [287, 93, 27, 27], "group": "Number row", "short": "9" },
+    { "id": "0",             "label": "0",                "pos": 32,  "art": 33, "print": [{ "text": "0" }, { "text": ")", "role": "shift" }], "box": [313, 93, 27, 27], "group": "Number row", "short": "0" },
+    { "id": "minus",         "label": "Minus",            "pos": 33,  "art": 34, "print": [{ "text": "-", "scale": 1.22 }, { "text": "_", "role": "shift", "scale": 1.22 }, { "text": "PF−", "role": "second" }], "box": [339, 93, 27, 27], "group": "Number row", "short": "-" },
+    { "id": "equals",        "label": "Equals",           "pos": 34,  "art": 35, "print": [{ "text": "=", "scale": 1.22 }, { "text": "+", "role": "shift", "scale": 1.22 }, { "text": "PF+", "role": "second" }], "box": [365, 93, 27, 27], "group": "Number row", "short": "=" },
+    { "id": "backspace",     "label": "Backspace",        "pos": 35,  "art": 36, "centered": true, "print": [{ "text": "BACKSPACE" }], "box": [391, 93, 53, 27], "group": "Number row", "short": "Back" },
+    { "id": "insert",        "label": "Insert",           "pos": 36,  "art": 37, "print": [{ "text": "INSERT" }], "box": [450, 93, 27, 27], "group": "Navigation", "short": "Inse" },
+    { "id": "home",          "label": "Home",             "pos": 37,  "art": 38, "print": [{ "text": "HOME" }], "box": [476, 93, 27, 27], "group": "Navigation", "short": "Home" },
+    { "id": "page-up",       "label": "Page Up",          "pos": 38,  "art": 39, "print": [{ "text": "PG" }, { "text": "UP" }], "box": [502, 93, 27, 27], "group": "Navigation", "short": "Page" },
+    { "id": "num-lock",      "label": "Num Lock",         "pos": 39,  "art": 40, "print": [{ "text": "NUM" }, { "text": "LOCK" }], "box": [534, 93, 27, 27], "group": "Number pad", "short": "Num" },
+    { "id": "keypad-slash",  "label": "Keypad /",         "pos": 40,  "art": 41, "print": [{ "text": "/" }], "box": [560, 93, 27, 27], "group": "Number pad", "short": "/" },
+    { "id": "keypad-star",   "label": "Keypad *",         "pos": 41,  "art": 42, "print": [{ "text": "*", "scale": 1.22 }], "box": [586, 93, 27, 27], "group": "Number pad", "short": "*" },
+    { "id": "keypad-minus",  "label": "Keypad -",         "pos": 42,  "art": 43, "print": [{ "text": "-", "scale": 1.22 }], "box": [612, 93, 27, 27], "group": "Number pad", "short": "−" },
+    { "id": "e2",            "label": "E2",               "pos": 43,  "art": 44, "print": [{ "text": "E2" }], "box": [22, 119, 27, 27], "group": "Macro keys", "short": "E2" },
+    { "id": "tab",           "label": "Tab",              "pos": 44,  "art": 45, "centered": true, "print": [{ "text": "TAB" }], "box": [53, 119, 40, 27], "group": "Modifiers and space", "short": "Tab" },
+    { "id": "q",             "label": "Q",                "pos": 45,  "art": 46, "print": [{ "text": "Q" }], "box": [92, 119, 27, 27], "group": "Letters and symbols", "short": "Q" },
+    { "id": "w",             "label": "W",                "pos": 46,  "art": 47, "print": [{ "text": "W" }], "box": [118, 119, 27, 27], "group": "Letters and symbols", "short": "W" },
+    { "id": "e",             "label": "E",                "pos": 47,  "art": 48, "print": [{ "text": "E" }], "box": [144, 119, 27, 27], "group": "Letters and symbols", "short": "E" },
+    { "id": "r",             "label": "R",                "pos": 48,  "art": 49, "print": [{ "text": "R" }], "box": [170, 119, 27, 27], "group": "Letters and symbols", "short": "R" },
+    { "id": "t",             "label": "T",                "pos": 49,  "art": 50, "print": [{ "text": "T" }], "box": [196, 119, 27, 27], "group": "Letters and symbols", "short": "T" },
+    { "id": "y",             "label": "Y",                "pos": 50,  "art": 51, "print": [{ "text": "Y" }], "box": [222, 119, 27, 27], "group": "Letters and symbols", "short": "Y" },
+    { "id": "u",             "label": "U",                "pos": 51,  "art": 52, "print": [{ "text": "U" }], "box": [248, 119, 27, 27], "group": "Letters and symbols", "short": "U" },
+    { "id": "i",             "label": "I",                "pos": 52,  "art": 53, "print": [{ "text": "I" }], "box": [274, 119, 27, 27], "group": "Letters and symbols", "short": "I" },
+    { "id": "o",             "label": "O",                "pos": 53,  "art": 54, "print": [{ "text": "O" }], "box": [300, 119, 27, 27], "group": "Letters and symbols", "short": "O" },
+    { "id": "p",             "label": "P",                "pos": 54,  "art": 55, "print": [{ "text": "P" }], "box": [326, 119, 27, 27], "group": "Letters and symbols", "short": "P" },
+    { "id": "left-bracket",  "label": "Left bracket",     "pos": 55,  "art": 56, "print": [{ "text": "[" }, { "text": "{", "role": "shift" }], "box": [352, 119, 27, 27], "group": "Letters and symbols", "short": "Left" },
+    { "id": "right-bracket", "label": "Right bracket",    "pos": 56,  "art": 57, "print": [{ "text": "]" }, { "text": "}", "role": "shift" }], "box": [378, 119, 27, 27], "group": "Letters and symbols", "short": "Righ" },
+    { "id": "backslash",     "label": "Backslash",        "pos": 57,  "art": 58, "print": [{ "text": "\\" }, { "text": "|", "role": "shift" }], "box": [404, 119, 40, 27], "group": "Letters and symbols", "short": "Back" },
+    { "id": "delete",        "label": "Delete",           "pos": 58,  "art": 59, "print": [{ "text": "DELETE" }], "box": [450, 119, 27, 27], "group": "Navigation", "short": "Dele" },
+    { "id": "end",           "label": "End",              "pos": 59,  "art": 60, "print": [{ "text": "END" }], "box": [476, 119, 27, 27], "group": "Navigation", "short": "End" },
+    { "id": "page-down",     "label": "Page Down",        "pos": 60,  "art": 61, "print": [{ "text": "PG" }, { "text": "DN" }], "box": [502, 119, 27, 27], "group": "Navigation", "short": "Page" },
+    { "id": "keypad-7",      "label": "Keypad 7",        "pos": 61,  "art": 62, "print": [{ "text": "7" }, { "text": "HOME", "role": "second" }], "box": [534, 119, 27, 27], "group": "Number pad", "short": "7" },
+    { "id": "keypad-8",      "label": "Keypad 8",        "pos": 62,  "art": 63, "print": [{ "text": "8" }, { "text": "▲", "role": "second" }], "box": [560, 119, 27, 27], "group": "Number pad", "short": "8" },
+    { "id": "keypad-9",      "label": "Keypad 9",        "pos": 63,  "art": 64, "print": [{ "text": "9" }, { "text": "PG UP", "role": "second" }], "box": [586, 119, 27, 27], "group": "Number pad", "short": "9" },
+    { "id": "keypad-plus",   "label": "Keypad +",         "pos": 64,  "art": 65, "print": [{ "text": "+", "scale": 1.22 }], "box": [612, 119, 27, 53], "group": "Number pad", "short": "+" },
+    { "id": "e3",            "label": "E3",               "pos": 65,  "art": 66, "print": [{ "text": "E3" }], "box": [22, 145, 27, 27], "group": "Macro keys", "short": "E3" },
+    { "id": "caps-lock",     "label": "Caps Lock",        "pos": 66,  "art": 67, "centered": true, "print": [{ "text": "CAPS" }, { "text": "LOCK" }], "box": [53, 145, 47, 27], "group": "Modifiers and space", "short": "Caps" },
+    { "id": "a",             "label": "A",                "pos": 67,  "art": 68, "print": [{ "text": "A" }], "box": [99, 145, 27, 27], "group": "Letters and symbols", "short": "A" },
+    { "id": "s",             "label": "S",                "pos": 68,  "art": 69, "print": [{ "text": "S" }], "box": [125, 145, 27, 27], "group": "Letters and symbols", "short": "S" },
+    { "id": "d",             "label": "D",                "pos": 69,  "art": 70, "print": [{ "text": "D" }], "box": [151, 145, 27, 27], "group": "Letters and symbols", "short": "D" },
+    { "id": "f",             "label": "F",                "pos": 70,  "art": 71, "print": [{ "text": "F" }], "box": [177, 145, 27, 27], "group": "Letters and symbols", "short": "F" },
+    { "id": "g",             "label": "G",                "pos": 71,  "art": 72, "print": [{ "text": "G" }], "box": [203, 145, 27, 27], "group": "Letters and symbols", "short": "G" },
+    { "id": "h",             "label": "H",                "pos": 72,  "art": 73, "print": [{ "text": "H" }], "box": [229, 145, 27, 27], "group": "Letters and symbols", "short": "H" },
+    { "id": "j",             "label": "J",                "pos": 73,  "art": 74, "print": [{ "text": "J" }], "box": [255, 145, 27, 27], "group": "Letters and symbols", "short": "J" },
+    { "id": "k",             "label": "K",                "pos": 74,  "art": 75, "print": [{ "text": "K" }], "box": [281, 145, 27, 27], "group": "Letters and symbols", "short": "K" },
+    { "id": "l",             "label": "L",                "pos": 75,  "art": 76, "print": [{ "text": "L" }], "box": [307, 145, 27, 27], "group": "Letters and symbols", "short": "L" },
+    { "id": "semicolon",     "label": "Semicolon",        "pos": 76,  "art": 77, "print": [{ "text": ";", "scale": 1.22 }, { "text": ":", "role": "shift", "scale": 1.22 }], "box": [333, 145, 27, 27], "group": "Letters and symbols", "short": ";" },
+    { "id": "quote",         "label": "Quote",            "pos": 77,  "art": 78, "print": [{ "text": "'", "scale": 1.22 }, { "text": "\"", "role": "shift", "scale": 1.22 }], "box": [359, 145, 27, 27], "group": "Letters and symbols", "short": "Quot" },
+    { "id": "enter",         "label": "Enter",            "pos": 78,  "art": 79, "centered": true, "print": [{ "text": "ENTER" }], "box": [385, 145, 59, 27], "group": "Modifiers and space", "short": "Ente" },
+    { "id": "keypad-4",      "label": "Keypad 4",        "pos": 79,  "art": 80, "print": [{ "text": "4" }, { "text": "◀", "role": "second" }], "box": [534, 145, 27, 27], "group": "Number pad", "short": "4" },
+    { "id": "keypad-5",      "label": "Keypad 5",        "pos": 80,  "art": 81, "print": [{ "text": "5" }], "box": [560, 145, 27, 27], "group": "Number pad", "short": "5" },
+    { "id": "keypad-6",      "label": "Keypad 6",        "pos": 81,  "art": 82, "print": [{ "text": "6" }, { "text": "▶", "role": "second" }], "box": [586, 145, 27, 27], "group": "Number pad", "short": "6" },
+    { "id": "e4",            "label": "E4",               "pos": 82,  "art": 83, "print": [{ "text": "E4" }], "box": [22, 171, 27, 27], "group": "Macro keys", "short": "E4" },
+    { "id": "left-shift",    "label": "Left Shift",       "pos": 83,  "art": 84, "centered": true, "print": [{ "text": "SHIFT" }], "box": [53, 171, 59, 27], "group": "Modifiers and space", "short": "Shift" },
+    { "id": "z",             "label": "Z",                "pos": 84,  "art": 85, "print": [{ "text": "Z" }], "box": [111, 171, 27, 27], "group": "Letters and symbols", "short": "Z" },
+    { "id": "x",             "label": "X",                "pos": 85,  "art": 86, "print": [{ "text": "X" }], "box": [137, 171, 27, 27], "group": "Letters and symbols", "short": "X" },
+    { "id": "c",             "label": "C",                "pos": 86,  "art": 87, "print": [{ "text": "C" }], "box": [163, 171, 27, 27], "group": "Letters and symbols", "short": "C" },
+    { "id": "v",             "label": "V",                "pos": 87,  "art": 88, "print": [{ "text": "V" }], "box": [189, 171, 27, 27], "group": "Letters and symbols", "short": "V" },
+    { "id": "b",             "label": "B",                "pos": 88,  "art": 89, "print": [{ "text": "B" }], "box": [215, 171, 27, 27], "group": "Letters and symbols", "short": "B" },
+    { "id": "n",             "label": "N",                "pos": 89,  "art": 90, "print": [{ "text": "N" }], "box": [241, 171, 27, 27], "group": "Letters and symbols", "short": "N" },
+    { "id": "m",             "label": "M",                "pos": 90,  "art": 91, "print": [{ "text": "M" }], "box": [267, 171, 27, 27], "group": "Letters and symbols", "short": "M" },
+    { "id": "comma",         "label": "Comma",            "pos": 91,  "art": 92, "print": [{ "text": ",", "scale": 1.22 }, { "text": "<", "role": "shift" }], "box": [293, 171, 27, 27], "group": "Letters and symbols", "short": "," },
+    { "id": "period",        "label": "Period",           "pos": 92,  "art": 93, "print": [{ "text": ".", "scale": 1.22 }, { "text": ">", "role": "shift" }], "box": [319, 171, 27, 27], "group": "Letters and symbols", "short": "." },
+    { "id": "slash",         "label": "Slash",            "pos": 93,  "art": 94, "print": [{ "text": "/" }, { "text": "?", "role": "shift" }], "box": [345, 171, 27, 27], "group": "Letters and symbols", "short": "/" },
+    { "id": "right-shift",   "label": "Right Shift",      "pos": 94,  "art": 95, "centered": true, "print": [{ "text": "SHIFT" }], "box": [371, 171, 73, 27], "group": "Modifiers and space", "short": "Shift" },
+    { "id": "e6",            "label": "E6",               "pos": 95,  "art": 96, "print": [{ "text": "E6" }], "box": [450, 171, 27, 27], "group": "Navigation", "short": "E6" },
+    { "id": "up",            "label": "Up arrow",         "pos": 96,  "art": 97, "print": [{ "text": "▲" }], "box": [476, 171, 27, 27], "group": "Navigation", "short": "↑" },
+    { "id": "e7",            "label": "E7",               "pos": 97,  "art": 98, "print": [{ "text": "E7" }], "box": [502, 171, 27, 27], "group": "Navigation", "short": "E7" },
+    { "id": "keypad-1",      "label": "Keypad 1",        "pos": 98,  "art": 99, "print": [{ "text": "1" }, { "text": "END", "role": "second" }], "box": [534, 171, 27, 27], "group": "Number pad", "short": "1" },
+    { "id": "keypad-2",      "label": "Keypad 2",        "pos": 99,  "art": 100, "print": [{ "text": "2" }, { "text": "▼", "role": "second" }], "box": [560, 171, 27, 27], "group": "Number pad", "short": "2" },
+    { "id": "keypad-3",      "label": "Keypad 3",        "pos": 100, "art": 101, "print": [{ "text": "3" }, { "text": "PG DN", "role": "second" }], "box": [586, 171, 27, 27], "group": "Number pad", "short": "3" },
+    { "id": "keypad-enter",  "label": "Keypad Enter",     "pos": 101, "art": 102, "centered": true, "print": [{ "text": "ENTER" }], "box": [612, 171, 27, 53], "group": "Number pad", "short": "Ent" },
+    { "id": "e5",            "label": "E5",               "pos": 102, "art": 103, "print": [{ "text": "E5" }], "box": [22, 197, 27, 27], "group": "Macro keys", "short": "E5" },
+    { "id": "left-ctrl",     "label": "Left Ctrl",        "pos": 103, "art": 104, "print": [{ "text": "CTRL" }], "box": [53, 197, 40, 27], "group": "Modifiers and space", "short": "Ctrl" },
+    { "id": "fn",            "label": "Fn",               "pos": 104, "art": 105, "print": [{ "text": "FN" }], "box": [92, 197, 40, 27], "group": "Modifiers and space", "short": "Fn" },
+    { "id": "left-alt",      "label": "Left Alt",         "pos": 105, "art": 106, "print": [{ "text": "ALT" }], "box": [131, 197, 40, 27], "group": "Modifiers and space", "short": "Alt" },
+    { "id": "space",         "label": "Space",            "pos": 106, "art": 107, "lit": false, "box": [170, 197, 146, 37.37], "group": "Modifiers and space", "short": "Spac" },
+    { "id": "right-alt",     "label": "Right Alt",        "pos": 107, "art": 108, "print": [{ "text": "ALT" }], "box": [315, 197, 33, 27], "group": "Modifiers and space", "short": "Alt" },
+    { "id": "win",           "label": "Win",              "pos": 108, "art": 109, "print": [{ "text": "⊞" }], "box": [347, 197, 33, 27], "group": "Modifiers and space", "short": "Win" },
+    { "id": "menu",          "label": "Menu",             "pos": 109, "art": 110, "print": [{ "text": "≡" }], "box": [379, 197, 33, 27], "group": "Modifiers and space", "short": "Menu" },
+    { "id": "right-ctrl",    "label": "Right Ctrl",       "pos": 110, "art": 111, "print": [{ "text": "CTRL" }], "box": [411, 197, 33, 27], "group": "Modifiers and space", "short": "Ctrl" },
+    { "id": "left",          "label": "Left arrow",       "pos": 111, "art": 112, "print": [{ "text": "◀" }], "box": [450, 197, 27, 27], "group": "Navigation", "short": "←" },
+    { "id": "down",          "label": "Down arrow",       "pos": 112, "art": 113, "print": [{ "text": "▼" }], "box": [476, 197, 27, 27], "group": "Navigation", "short": "↓" },
+    { "id": "right",         "label": "Right arrow",      "pos": 113, "art": 114, "print": [{ "text": "▶" }], "box": [502, 197, 27, 27], "group": "Navigation", "short": "→" },
+    { "id": "keypad-0",      "label": "Keypad 0",        "pos": 114, "art": 115, "print": [{ "text": "0" }, { "text": "INS", "role": "second" }], "box": [534, 197, 53, 27], "group": "Number pad", "short": "0" },
+    { "id": "keypad-dot",    "label": "Keypad .",         "pos": 115, "art": 116, "print": [{ "text": ".", "scale": 1.22 }, { "text": "DEL", "role": "second" }], "box": [586, 197, 27, 27], "group": "Number pad", "short": "." },
+    { "id": "dimmer",        "label": "Dimmer",                       "art": 117, "slider": 0 },
+    { "id": "volume",        "label": "Volume",                       "art": 118, "slider": 1 }
+  ],
+
+  // The display, and the glass over it: the drawing's screen_1 and overlay_1.
+  "screens": [
+    { "id": "display", "label": "Display", "art": 1 }
+  ],
+
+  // How the keys' light gets out, as Ectomatter works it out. The Key lab
+  // (Ctrl+Shift+L) tunes it and saves it here.
+  "light": {
+    "scale": 1.38,       // the drawing's units to the millimeter
+    "typical": "2",      // the key the Key lab draws for all keys
+
+    "switches": {
+      "kind": "led-slot",  // led-slot, clear-top or clear: the switch's housing
+      "top": 5.7,          // the housing's top, above the deck
+      "width": 12,
+      "led": 5.08,         // the LED, north of the switch's middle (south below 0)
+      "lumens": 1.056,     // the light each LED gives off at full white
+      "beam": 3,           // how tight the LED's beam is: higher is tighter
+      "scattered": 0.85,   // a clear housing: the share of the light it scatters,
+      "sides": 0.5,        //   the share of that out of its sides,
+      "glow": 6,            //   and how far its glow carries
+      "bleed": 0.35
+    },
+
+    "caps": {
+      "kind": "shine-through",  // shine-through, pudding or translucent
+      "foot": 5,                // the skirt's foot and the cap's top, above the deck
+      "top": 14,
+      "opacity": 0.8,           // the walls' opacity, on pudding and translucent caps: 0 lets the light through, 1 is opaque
+      "black": 0.4,             // how far down the sides the top's black comes, on pudding caps
+      "milky": 0.8,             // how milky the plastic is (the lab's Haze), 0 clear to 1 milky white
+      "inside": 0.2,            // the shares of light the caps' insides and outsides reflect
+      "outside": 0.6
+    },
+
+    // the legends: how much of the light behind them they hold back, 0 clear to
+    // 1 as dark as the cap's black; and with their LED off, their share of the drawing's gray
+    "legends": { "opacity": 0.7, "unlit": 0.5 },
+
+    "wells": {
+      "art": "mask_1",  // the drawing's piece that holds them
+      "depth": 2,
+      "deck": 0.22,     // the shares of light the deck and the chassis reflect
+      "chassis": 0.4
+    },
+
+    // the display: its dots lit and unlit and the ground between them, how
+    // much of its cell a dot fills, and how strongly the glass shows its sheen
+    "display": { "lit": 45, "unlit": 1, "background": 2, "dot": 0.84, "glass": 1, "bleed": 0.2 },
+
+    // keys set apart from the rest, only what differs ("place" is where a
+    // key's switch sits under its cap, mm east and north of its middle): the
+    // buttons stand on the chassis, opaque, as high as EVGA's photos show them
+    "keys": {
+      "print-screen": { "legends": { "words": 1.5 } },
+      "scroll-lock": { "legends": { "words": 1.5 } },
+      "pause": { "legends": { "words": 1.5 } },
+      "insert": { "legends": { "words": 1.5 } },
+      "home": { "legends": { "words": 1.5 } },
+      "page-up": { "legends": { "words": 1.5 } },
+      "num-lock": { "legends": { "words": 1.5 } },
+      "delete": { "legends": { "words": 1.5 } },
+      "end": { "legends": { "words": 1.5 } },
+      "page-down": { "legends": { "words": 1.5 } },
+      "keypad-7": { "legends": { "words": 1.5 } },
+      "keypad-9": { "legends": { "words": 1.5 } },
+      "keypad-1": { "legends": { "words": 1.5 } },
+      "keypad-3": { "legends": { "words": 1.5 } },
+      "keypad-0": { "legends": { "words": 1.5 } },
+      "keypad-dot": { "legends": { "words": 1.5 } },
+      "gpc":      { "caps": { "kind": "shine-through", "foot": 2, "top": 3 } },
+      "stop":     { "caps": { "kind": "shine-through", "foot": 2, "top": 6 } },
+      "previous": { "caps": { "kind": "shine-through", "foot": 2, "top": 6 } },
+      "play":     { "caps": { "kind": "shine-through", "foot": 2, "top": 6 } },
+      "next":     { "caps": { "kind": "shine-through", "foot": 2, "top": 6 } },
+      "keypad-plus": { "place": { "north": 4.5 }, "legends": { "place": "middle" } },
+      "keypad-enter": { "place": { "north": 4.5 } },
+      "space": { "caps": { "kind": "shine-through" } },
+      "backslash": { "legends": { "main": "|", "shift": "", "second": "\\" } },
+      "right-bracket": { "legends": { "shift": "", "main": "}", "second": "]" } },
+      "left-bracket": { "legends": { "main": "{", "shift": "", "second": "[" } },
+      "semicolon": { "legends": { "second": ";", "shift": "", "main": ":" } },
+      "quote": { "legends": { "main": "\"", "second": "'", "shift": "" } },
+      "slash": { "legends": { "main": "?", "shift": "", "second": "/" } },
+      "period": { "legends": { "main": ">", "second": ".", "shift": "" } },
+      "comma": { "legends": { "main": "<", "shift": "", "second": "," } },
+      "minus": { "legends": { "shift": "-", "main": "_" } },
+      "equals": { "legends": { "main": "+", "shift": "=" } },
+      "grave": { "legends": { "main": "~", "shift": "`" } },
+      "f1": { "legends": { "second": "🔇" } },
+      "right-shift": { "legends": { "second": "SHIFT", "main": "⇧", "down": -1.5, "words": 2.1 } },
+      "left-shift": { "legends": { "second": "SHIFT", "main": "⇧", "down": -1.5, "words": 2.1 } },
+      "tab": { "legends": { "second": "TAB", "main": "↹", "down": -1 } },
+      "e1": { "legends": { "words": 2.8 } },
+      "e2": { "legends": { "words": 2.8 } },
+      "e3": { "legends": { "words": 2.8 } },
+      "e4": { "legends": { "words": 2.8 } },
+      "e5": { "legends": { "words": 2.8 } },
+      "caps-lock": { "legends": { "words": 2.3, "place": "middle", "down": 0.5 } },
+      "esc": { "legends": { "words": 2.15 } }
+    }
+  },
+
+  // The lock lights over the numpad, the drawing's pieces named here: dark
+  // until the keyboard's own lock light is on, then lit in their color,
+  // brightest over the LED and a little light out of the window's edges.
+  "lock_lights": {
+    "num": "num-lock-light", "caps": "caps-lock-light", "scroll": "scroll-lock-light",
+    "color": "#ff6000",
+    "brightness": 300,
+    "spread": 1.45,  // how far from the LED the window stays bright
+    "floor": 0.5,    // how lit the window's corners stay
+    "spill": { "brightness": 6, "reach": 0.72 }
+  }
+}

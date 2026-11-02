@@ -1,0 +1,24 @@
+[package]
+name = "evga-z10"
+version = "0.1.0"
+description = "Talks to the EVGA Z10 RGB keyboard: profiles, key assignments, lighting, macros and the LCD."
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+# the core protocol's shared names and actions (shared.rs)
+ectomatter-protocol = { path = "../ectomatter-protocol" }
+hidapi = { version = "2.6", optional = true }
+serde.workspace = true
+serde_json.workspace = true
+thiserror = "2"
+
+[features]
+# the keyboard reached straight over hidapi; without it, through a Transport the
+# caller supplies (Ectomatter's, when this runs as a core module)
+default = ["hid"]
+hid = ["dep:hidapi"]
+
+[dev-dependencies]
+flate2 = "1"

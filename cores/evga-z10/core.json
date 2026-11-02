@@ -1,0 +1,28 @@
+// The EVGA Z10 RGB's core: what it is, the module Ectomatter runs, and the
+// devices that module may open (Ectomatter opens these and no others for it).
+{
+  "id": "evga-z10",
+  "kind": "core",        // a core, for a device (a plugin says "plugin")
+  "name": "EVGA Z10 RGB",
+  "version": "1.0.0",
+  "protocol": 4,          // the core protocol it speaks
+  "ectomatter": "0.1.0",    // the oldest Ectomatter it runs on
+  "module": "core.wasm",  // built from module/ by tools/build-cores.sh
+  "license": "GPL-3.0-only",
+  "description": "Keys, lighting and the screen of the EVGA Z10 RGB.",
+  "glyph": "glyph.svg",   // the device, drawn in the style of Ectomatter's own glyphs
+  "deviceFile": "device.json",  // the device: its art, controls, print and light (core-protocol.md, section 4)
+  "devices": ["EVGA Z10 RGB"],  // the devices it works with, by name, for Ectomatter to say before any is plugged in
+  "matches": [
+    // the keyboard's indicator collection, where its commands go
+    { "usb": { "vendor": "3842", "product": "2611", "usagePage": "0008", "usage": "004B" } },
+    // the same, where the system lists the keyboard by interface instead
+    { "usb": { "vendor": "3842", "product": "2611", "interface": 1 } },
+    // its key reports, read beside the computer for the keys given a host
+    // slot, and every key while Ectomatter watches: the boot keyboard, and the
+    // ten-key report
+    { "usb": { "vendor": "3842", "product": "2611", "interface": 0 } },
+    { "usb": { "vendor": "3842", "product": "2611", "interface": 2 } }
+  ],
+  "uses": []
+}
