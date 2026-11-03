@@ -2,7 +2,7 @@
 
 Keys, lighting and the screen of the EVGA Z10 RGB.
 
-<img src="https://raw.githubusercontent.com/Ectonomic/Ectomatter/main/docs/pictures/core-evga-z10.png" width="100%" alt="This core's drawing of the keyboard, lit by Ectomatter: a wave of teal and yellow across the keys, and the screen above them showing the computer's temperatures and loads">
+<img src="pictures/evga-z10.png" width="100%" alt="This core's drawing of the keyboard, lit by Ectomatter: a wave of teal and yellow across the keys, and the screen above them showing the computer's temperatures and loads">
 
 This is a core for [Ectomatter](https://github.com/Ectonomic/Ectomatter), one app for the devices on your desk. A core is the part of Ectomatter that talks to one device. It runs inside Ectomatter as a WebAssembly module and reaches only the USB devices its manifest (`core.json`) names.
 
@@ -27,6 +27,7 @@ Ectonomic builds its releases with Rust 1.98.1.
 
 - `core.json`, `device.json`, `glyph.svg`, `art/`, `fonts/`: the core as Ectomatter installs it, its manifest and the files it carries
 - `module/`: the module's source
+- `pictures/`: the picture at the top of this README, made in Ectomatter's repository by `tools/readme-moving.sh`, and not part of the core
 - `crates/`: the core's own library, which its module is built from
   - `evga-z10`: talks to the EVGA Z10 RGB keyboard: profiles, key assignments, lighting, macros and the LCD
 - `tools/z10-art/`: the tools the keyboard's drawing (`art/z10.svg`) and its typefaces (`fonts/`) were made with
