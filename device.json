@@ -222,7 +222,9 @@
 
     // keys set apart from the rest, only what differs ("place" is where a
     // key's switch sits under its cap, mm east and north of its middle): the
-    // buttons stand on the chassis, opaque, as high as EVGA's photos show them
+    // buttons stand on the chassis, opaque, as high as EVGA's photos show them,
+    // and like the spacebar can't be swapped ("fixed": caps made over for all
+    // keys don't reach them)
     "keys": {
       "print-screen": { "legends": { "words": 1.5 } },
       "scroll-lock": { "legends": { "words": 1.5 } },
@@ -240,14 +242,15 @@
       "keypad-3": { "legends": { "words": 1.5 } },
       "keypad-0": { "legends": { "words": 1.5 } },
       "keypad-dot": { "legends": { "words": 1.5 } },
-      "gpc":      { "caps": { "kind": "shine-through", "foot": 2, "top": 3 } },
-      "stop":     { "caps": { "kind": "shine-through", "foot": 2, "top": 6 } },
-      "previous": { "caps": { "kind": "shine-through", "foot": 2, "top": 6 } },
-      "play":     { "caps": { "kind": "shine-through", "foot": 2, "top": 6 } },
-      "next":     { "caps": { "kind": "shine-through", "foot": 2, "top": 6 } },
+      "gpc":      { "caps": { "kind": "shine-through", "foot": 2, "top": 3, "fixed": true } },
+      "stop":     { "caps": { "kind": "shine-through", "foot": 2, "top": 6, "fixed": true } },
+      "previous": { "caps": { "kind": "shine-through", "foot": 2, "top": 6, "fixed": true } },
+      "play":     { "caps": { "kind": "shine-through", "foot": 2, "top": 6, "fixed": true } },
+      "next":     { "caps": { "kind": "shine-through", "foot": 2, "top": 6, "fixed": true } },
       "keypad-plus": { "place": { "north": 4.5 }, "legends": { "place": "middle" } },
       "keypad-enter": { "place": { "north": 4.5 } },
-      "space": { "caps": { "kind": "shine-through" } },
+      // (the spacebar comes only with the keyboard, and isn't swapped)
+      "space": { "caps": { "kind": "shine-through", "fixed": true } },
       "backslash": { "legends": { "main": "|", "shift": "", "second": "\\" } },
       "right-bracket": { "legends": { "shift": "", "main": "}", "second": "]" } },
       "left-bracket": { "legends": { "main": "{", "shift": "", "second": "[" } },

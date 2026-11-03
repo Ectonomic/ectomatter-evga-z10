@@ -4,7 +4,7 @@
   "id": "evga-z10",
   "kind": "core",        // a core, for a device (a plugin says "plugin")
   "name": "EVGA Z10 RGB",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "protocol": 4,          // the core protocol it speaks
   "ectomatter": "0.1.0",    // the oldest Ectomatter it runs on
   "module": "core.wasm",  // built from module/ by tools/build-cores.sh
