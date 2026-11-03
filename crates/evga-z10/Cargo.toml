@@ -8,7 +8,7 @@ repository.workspace = true
 
 [dependencies]
 # the core protocol's shared names and actions (shared.rs)
-ectomatter-protocol = { path = "../ectomatter-protocol" }
+ectomatter-protocol = { path = "../../../../crates/ectomatter-protocol" }
 hidapi = { version = "2.6", optional = true }
 serde.workspace = true
 serde_json.workspace = true

@@ -1,0 +1,1260 @@
+{
+ "controls": [
+  {
+   "pos": 1,
+   "label": "Escape",
+   "control": 1,
+   "illumination": [
+    1,
+    201,
+    401
+   ],
+   "legend": 101
+  },
+  {
+   "pos": 2,
+   "label": "F1",
+   "control": 2,
+   "illumination": [
+    2,
+    202,
+    402
+   ],
+   "legend": 102
+  },
+  {
+   "pos": 3,
+   "label": "F2",
+   "control": 3,
+   "illumination": [
+    3,
+    203,
+    403
+   ],
+   "legend": 103
+  },
+  {
+   "pos": 4,
+   "label": "F3",
+   "control": 4,
+   "illumination": [
+    4,
+    204,
+    404
+   ],
+   "legend": 104
+  },
+  {
+   "pos": 5,
+   "label": "F4",
+   "control": 5,
+   "illumination": [
+    5,
+    205,
+    405
+   ],
+   "legend": 105
+  },
+  {
+   "pos": 6,
+   "label": "F5",
+   "control": 6,
+   "illumination": [
+    6,
+    206,
+    406
+   ],
+   "legend": 106
+  },
+  {
+   "pos": 7,
+   "label": "F6",
+   "control": 7,
+   "illumination": [
+    7,
+    207,
+    407
+   ],
+   "legend": 107
+  },
+  {
+   "pos": 8,
+   "label": "F7",
+   "control": 8,
+   "illumination": [
+    8,
+    208,
+    408
+   ],
+   "legend": 108
+  },
+  {
+   "pos": 9,
+   "label": "F8",
+   "control": 9,
+   "illumination": [
+    9,
+    209,
+    409
+   ],
+   "legend": 109
+  },
+  {
+   "pos": 10,
+   "label": "F9",
+   "control": 10,
+   "illumination": [
+    10,
+    210,
+    410
+   ],
+   "legend": 110
+  },
+  {
+   "pos": 11,
+   "label": "F10",
+   "control": 11,
+   "illumination": [
+    11,
+    211,
+    411
+   ],
+   "legend": 111
+  },
+  {
+   "pos": 12,
+   "label": "F11",
+   "control": 12,
+   "illumination": [
+    12,
+    212,
+    412
+   ],
+   "legend": 112
+  },
+  {
+   "pos": 13,
+   "label": "F12",
+   "control": 13,
+   "illumination": [
+    13,
+    213,
+    413
+   ],
+   "legend": 113
+  },
+  {
+   "pos": 14,
+   "label": "Print Screen",
+   "control": 14,
+   "illumination": [
+    14,
+    214,
+    414
+   ],
+   "legend": 114
+  },
+  {
+   "pos": 15,
+   "label": "Scroll Lock",
+   "control": 15,
+   "illumination": [
+    15,
+    215,
+    415
+   ],
+   "legend": 115
+  },
+  {
+   "pos": 16,
+   "label": "Pause/Break",
+   "control": 16,
+   "illumination": [
+    16,
+    216,
+    416
+   ],
+   "legend": 116
+  },
+  {
+   "pos": 0,
+   "label": "Game mode button",
+   "control": 17,
+   "legend": 117
+  },
+  {
+   "pos": 17,
+   "label": "Media stop",
+   "control": 18
+  },
+  {
+   "pos": 18,
+   "label": "Previous track",
+   "control": 19
+  },
+  {
+   "pos": 19,
+   "label": "Play/pause",
+   "control": 20
+  },
+  {
+   "pos": 20,
+   "label": "Next track",
+   "control": 21
+  },
+  {
+   "pos": 21,
+   "label": "E1",
+   "control": 22,
+   "illumination": [
+    22,
+    222,
+    422
+   ],
+   "legend": 122
+  },
+  {
+   "pos": 22,
+   "label": "Grave accent",
+   "control": 23,
+   "illumination": [
+    23,
+    223,
+    423
+   ],
+   "legend": 123
+  },
+  {
+   "pos": 23,
+   "label": "1",
+   "control": 24,
+   "illumination": [
+    24,
+    224,
+    424
+   ],
+   "legend": 124
+  },
+  {
+   "pos": 24,
+   "label": "2",
+   "control": 25,
+   "illumination": [
+    25,
+    225,
+    425
+   ],
+   "legend": 125
+  },
+  {
+   "pos": 25,
+   "label": "3",
+   "control": 26,
+   "illumination": [
+    26,
+    226,
+    426
+   ],
+   "legend": 126
+  },
+  {
+   "pos": 26,
+   "label": "4",
+   "control": 27,
+   "illumination": [
+    27,
+    227,
+    427
+   ],
+   "legend": 127
+  },
+  {
+   "pos": 27,
+   "label": "5",
+   "control": 28,
+   "illumination": [
+    28,
+    228,
+    428
+   ],
+   "legend": 128
+  },
+  {
+   "pos": 28,
+   "label": "6",
+   "control": 29,
+   "illumination": [
+    29,
+    229,
+    429
+   ],
+   "legend": 129
+  },
+  {
+   "pos": 29,
+   "label": "7",
+   "control": 30,
+   "illumination": [
+    30,
+    230,
+    430
+   ],
+   "legend": 130
+  },
+  {
+   "pos": 30,
+   "label": "8",
+   "control": 31,
+   "illumination": [
+    31,
+    231,
+    431
+   ],
+   "legend": 131
+  },
+  {
+   "pos": 31,
+   "label": "9",
+   "control": 32,
+   "illumination": [
+    32,
+    232,
+    432
+   ],
+   "legend": 132
+  },
+  {
+   "pos": 32,
+   "label": "0",
+   "control": 33,
+   "illumination": [
+    33,
+    233,
+    433
+   ],
+   "legend": 133
+  },
+  {
+   "pos": 33,
+   "label": "Minus",
+   "control": 34,
+   "illumination": [
+    34,
+    234,
+    434
+   ],
+   "legend": 134
+  },
+  {
+   "pos": 34,
+   "label": "Equals",
+   "control": 35,
+   "illumination": [
+    35,
+    235,
+    435
+   ],
+   "legend": 135
+  },
+  {
+   "pos": 35,
+   "label": "Backspace",
+   "control": 36,
+   "illumination": [
+    36,
+    236,
+    436
+   ],
+   "legend": 136
+  },
+  {
+   "pos": 36,
+   "label": "Insert",
+   "control": 37,
+   "illumination": [
+    37,
+    237,
+    437
+   ],
+   "legend": 137
+  },
+  {
+   "pos": 37,
+   "label": "Home",
+   "control": 38,
+   "illumination": [
+    38,
+    238,
+    438
+   ],
+   "legend": 138
+  },
+  {
+   "pos": 38,
+   "label": "Page Up",
+   "control": 39,
+   "illumination": [
+    39,
+    239,
+    439
+   ],
+   "legend": 139
+  },
+  {
+   "pos": 39,
+   "label": "Num Lock",
+   "control": 40,
+   "illumination": [
+    40,
+    240,
+    440
+   ],
+   "legend": 140
+  },
+  {
+   "pos": 40,
+   "label": "Keypad /",
+   "control": 41,
+   "illumination": [
+    41,
+    241,
+    441
+   ],
+   "legend": 141
+  },
+  {
+   "pos": 41,
+   "label": "Keypad *",
+   "control": 42,
+   "illumination": [
+    42,
+    242,
+    442
+   ],
+   "legend": 142
+  },
+  {
+   "pos": 42,
+   "label": "Keypad -",
+   "control": 43,
+   "illumination": [
+    43,
+    243,
+    443
+   ],
+   "legend": 143
+  },
+  {
+   "pos": 43,
+   "label": "E2",
+   "control": 44,
+   "illumination": [
+    44,
+    244,
+    444
+   ],
+   "legend": 144
+  },
+  {
+   "pos": 44,
+   "label": "Tab",
+   "control": 45,
+   "illumination": [
+    45,
+    245,
+    445
+   ],
+   "legend": 145
+  },
+  {
+   "pos": 45,
+   "label": "Q",
+   "control": 46,
+   "illumination": [
+    46,
+    246,
+    446
+   ],
+   "legend": 146
+  },
+  {
+   "pos": 46,
+   "label": "W",
+   "control": 47,
+   "illumination": [
+    47,
+    247,
+    447
+   ],
+   "legend": 147
+  },
+  {
+   "pos": 47,
+   "label": "E",
+   "control": 48,
+   "illumination": [
+    48,
+    248,
+    448
+   ],
+   "legend": 148
+  },
+  {
+   "pos": 48,
+   "label": "R",
+   "control": 49,
+   "illumination": [
+    49,
+    249,
+    449
+   ],
+   "legend": 149
+  },
+  {
+   "pos": 49,
+   "label": "T",
+   "control": 50,
+   "illumination": [
+    50,
+    250,
+    450
+   ],
+   "legend": 150
+  },
+  {
+   "pos": 50,
+   "label": "Y",
+   "control": 51,
+   "illumination": [
+    51,
+    251,
+    451
+   ],
+   "legend": 151
+  },
+  {
+   "pos": 51,
+   "label": "U",
+   "control": 52,
+   "illumination": [
+    52,
+    252,
+    452
+   ],
+   "legend": 152
+  },
+  {
+   "pos": 52,
+   "label": "I",
+   "control": 53,
+   "illumination": [
+    53,
+    253,
+    453
+   ],
+   "legend": 153
+  },
+  {
+   "pos": 53,
+   "label": "O",
+   "control": 54,
+   "illumination": [
+    54,
+    254,
+    454
+   ],
+   "legend": 154
+  },
+  {
+   "pos": 54,
+   "label": "P",
+   "control": 55,
+   "illumination": [
+    55,
+    255,
+    455
+   ],
+   "legend": 155
+  },
+  {
+   "pos": 55,
+   "label": "Left bracket",
+   "control": 56,
+   "illumination": [
+    56,
+    256,
+    456
+   ],
+   "legend": 156
+  },
+  {
+   "pos": 56,
+   "label": "Right bracket",
+   "control": 57,
+   "illumination": [
+    57,
+    257,
+    457
+   ],
+   "legend": 157
+  },
+  {
+   "pos": 57,
+   "label": "Backslash",
+   "control": 58,
+   "illumination": [
+    58,
+    258,
+    458
+   ],
+   "legend": 158
+  },
+  {
+   "pos": 58,
+   "label": "Delete",
+   "control": 59,
+   "illumination": [
+    59,
+    259,
+    459
+   ],
+   "legend": 159
+  },
+  {
+   "pos": 59,
+   "label": "End",
+   "control": 60,
+   "illumination": [
+    60,
+    260,
+    460
+   ],
+   "legend": 160
+  },
+  {
+   "pos": 60,
+   "label": "Page Down",
+   "control": 61,
+   "illumination": [
+    61,
+    261,
+    461
+   ],
+   "legend": 161
+  },
+  {
+   "pos": 61,
+   "label": "Keypad7",
+   "control": 62,
+   "illumination": [
+    62,
+    262,
+    462
+   ],
+   "legend": 162
+  },
+  {
+   "pos": 62,
+   "label": "Keypad8",
+   "control": 63,
+   "illumination": [
+    63,
+    263,
+    463
+   ],
+   "legend": 163
+  },
+  {
+   "pos": 63,
+   "label": "Keypad9",
+   "control": 64,
+   "illumination": [
+    64,
+    264,
+    464
+   ],
+   "legend": 164
+  },
+  {
+   "pos": 64,
+   "label": "Keypad +",
+   "control": 65,
+   "illumination": [
+    65,
+    265,
+    465
+   ],
+   "legend": 165
+  },
+  {
+   "pos": 65,
+   "label": "E3",
+   "control": 66,
+   "illumination": [
+    66,
+    266,
+    466
+   ],
+   "legend": 166
+  },
+  {
+   "pos": 66,
+   "label": "Caps Lock",
+   "control": 67,
+   "illumination": [
+    67,
+    267,
+    467
+   ],
+   "legend": 167
+  },
+  {
+   "pos": 67,
+   "label": "A",
+   "control": 68,
+   "illumination": [
+    68,
+    268,
+    468
+   ],
+   "legend": 168
+  },
+  {
+   "pos": 68,
+   "label": "S",
+   "control": 69,
+   "illumination": [
+    69,
+    269,
+    469
+   ],
+   "legend": 169
+  },
+  {
+   "pos": 69,
+   "label": "D",
+   "control": 70,
+   "illumination": [
+    70,
+    270,
+    470
+   ],
+   "legend": 170
+  },
+  {
+   "pos": 70,
+   "label": "F",
+   "control": 71,
+   "illumination": [
+    71,
+    271,
+    471
+   ],
+   "legend": 171
+  },
+  {
+   "pos": 71,
+   "label": "G",
+   "control": 72,
+   "illumination": [
+    72,
+    272,
+    472
+   ],
+   "legend": 172
+  },
+  {
+   "pos": 72,
+   "label": "H",
+   "control": 73,
+   "illumination": [
+    73,
+    273,
+    473
+   ],
+   "legend": 173
+  },
+  {
+   "pos": 73,
+   "label": "J",
+   "control": 74,
+   "illumination": [
+    74,
+    274,
+    474
+   ],
+   "legend": 174
+  },
+  {
+   "pos": 74,
+   "label": "K",
+   "control": 75,
+   "illumination": [
+    75,
+    275,
+    475
+   ],
+   "legend": 175
+  },
+  {
+   "pos": 75,
+   "label": "L",
+   "control": 76,
+   "illumination": [
+    76,
+    276,
+    476
+   ],
+   "legend": 176
+  },
+  {
+   "pos": 76,
+   "label": "Semicolon",
+   "control": 77,
+   "illumination": [
+    77,
+    277,
+    477
+   ],
+   "legend": 177
+  },
+  {
+   "pos": 77,
+   "label": "Quote",
+   "control": 78,
+   "illumination": [
+    78,
+    278,
+    478
+   ],
+   "legend": 178
+  },
+  {
+   "pos": 78,
+   "label": "Enter",
+   "control": 79,
+   "illumination": [
+    79,
+    279,
+    479
+   ],
+   "legend": 179
+  },
+  {
+   "pos": 79,
+   "label": "Keypad4",
+   "control": 80,
+   "illumination": [
+    80,
+    280,
+    480
+   ],
+   "legend": 180
+  },
+  {
+   "pos": 80,
+   "label": "Keypad5",
+   "control": 81,
+   "illumination": [
+    81,
+    281,
+    481
+   ],
+   "legend": 181
+  },
+  {
+   "pos": 81,
+   "label": "Keypad6",
+   "control": 82,
+   "illumination": [
+    82,
+    282,
+    482
+   ],
+   "legend": 182
+  },
+  {
+   "pos": 82,
+   "label": "E4",
+   "control": 83,
+   "illumination": [
+    83,
+    283,
+    483
+   ],
+   "legend": 183
+  },
+  {
+   "pos": 83,
+   "label": "Left Shift",
+   "control": 84,
+   "illumination": [
+    84,
+    284,
+    484
+   ],
+   "legend": 184
+  },
+  {
+   "pos": 84,
+   "label": "Z",
+   "control": 85,
+   "illumination": [
+    85,
+    285,
+    485
+   ],
+   "legend": 185
+  },
+  {
+   "pos": 85,
+   "label": "X",
+   "control": 86,
+   "illumination": [
+    86,
+    286,
+    486
+   ],
+   "legend": 186
+  },
+  {
+   "pos": 86,
+   "label": "C",
+   "control": 87,
+   "illumination": [
+    87,
+    287,
+    487
+   ],
+   "legend": 187
+  },
+  {
+   "pos": 87,
+   "label": "V",
+   "control": 88,
+   "illumination": [
+    88,
+    288,
+    488
+   ],
+   "legend": 188
+  },
+  {
+   "pos": 88,
+   "label": "B",
+   "control": 89,
+   "illumination": [
+    89,
+    289,
+    489
+   ],
+   "legend": 189
+  },
+  {
+   "pos": 89,
+   "label": "N",
+   "control": 90,
+   "illumination": [
+    90,
+    290,
+    490
+   ],
+   "legend": 190
+  },
+  {
+   "pos": 90,
+   "label": "M",
+   "control": 91,
+   "illumination": [
+    91,
+    291,
+    491
+   ],
+   "legend": 191
+  },
+  {
+   "pos": 91,
+   "label": "Comma",
+   "control": 92,
+   "illumination": [
+    92,
+    292,
+    492
+   ],
+   "legend": 192
+  },
+  {
+   "pos": 92,
+   "label": "Period",
+   "control": 93,
+   "illumination": [
+    93,
+    293,
+    493
+   ],
+   "legend": 193
+  },
+  {
+   "pos": 93,
+   "label": "Slash",
+   "control": 94,
+   "illumination": [
+    94,
+    294,
+    494
+   ],
+   "legend": 194
+  },
+  {
+   "pos": 94,
+   "label": "Right Shift",
+   "control": 95,
+   "illumination": [
+    95,
+    295,
+    495
+   ],
+   "legend": 195
+  },
+  {
+   "pos": 95,
+   "label": "E6",
+   "control": 96,
+   "illumination": [
+    96,
+    296,
+    496
+   ],
+   "legend": 196
+  },
+  {
+   "pos": 96,
+   "label": "Up arrow",
+   "control": 97,
+   "illumination": [
+    97,
+    297,
+    497
+   ],
+   "legend": 197
+  },
+  {
+   "pos": 97,
+   "label": "E7",
+   "control": 98,
+   "illumination": [
+    98,
+    298,
+    498
+   ],
+   "legend": 198
+  },
+  {
+   "pos": 98,
+   "label": "Keypad1",
+   "control": 99,
+   "illumination": [
+    99,
+    299,
+    499
+   ],
+   "legend": 199
+  },
+  {
+   "pos": 99,
+   "label": "Keypad2",
+   "control": 100,
+   "illumination": [
+    100,
+    300,
+    500
+   ],
+   "legend": 200
+  },
+  {
+   "pos": 100,
+   "label": "Keypad3",
+   "control": 101,
+   "illumination": [
+    101,
+    301,
+    501
+   ],
+   "legend": 201
+  },
+  {
+   "pos": 101,
+   "label": "Keypad Enter",
+   "control": 102,
+   "illumination": [
+    102,
+    302,
+    502
+   ],
+   "legend": 202
+  },
+  {
+   "pos": 102,
+   "label": "E5",
+   "control": 103,
+   "illumination": [
+    103,
+    303,
+    503
+   ],
+   "legend": 203
+  },
+  {
+   "pos": 103,
+   "label": "Left Ctrl",
+   "control": 104,
+   "illumination": [
+    104,
+    304,
+    504
+   ],
+   "legend": 204
+  },
+  {
+   "pos": 104,
+   "label": "Fn",
+   "control": 105,
+   "illumination": [
+    105,
+    305,
+    505
+   ],
+   "legend": 205
+  },
+  {
+   "pos": 105,
+   "label": "Left Alt",
+   "control": 106,
+   "illumination": [
+    106,
+    306,
+    506
+   ],
+   "legend": 206
+  },
+  {
+   "pos": 106,
+   "label": "Space",
+   "control": 107
+  },
+  {
+   "pos": 107,
+   "label": "Right Alt",
+   "control": 108,
+   "illumination": [
+    108,
+    308,
+    508
+   ],
+   "legend": 208
+  },
+  {
+   "pos": 108,
+   "label": "Win",
+   "control": 109,
+   "illumination": [
+    109,
+    309,
+    509
+   ],
+   "legend": 209
+  },
+  {
+   "pos": 109,
+   "label": "Menu",
+   "control": 110,
+   "illumination": [
+    110,
+    310,
+    510
+   ],
+   "legend": 210
+  },
+  {
+   "pos": 110,
+   "label": "Right Ctrl",
+   "control": 111,
+   "illumination": [
+    111,
+    311,
+    511
+   ],
+   "legend": 211
+  },
+  {
+   "pos": 111,
+   "label": "Left arrow",
+   "control": 112,
+   "illumination": [
+    112,
+    312,
+    512
+   ],
+   "legend": 212
+  },
+  {
+   "pos": 112,
+   "label": "Down arrow",
+   "control": 113,
+   "illumination": [
+    113,
+    313,
+    513
+   ],
+   "legend": 213
+  },
+  {
+   "pos": 113,
+   "label": "Right arrow",
+   "control": 114,
+   "illumination": [
+    114,
+    314,
+    514
+   ],
+   "legend": 214
+  },
+  {
+   "pos": 114,
+   "label": "Keypad0",
+   "control": 115,
+   "illumination": [
+    115,
+    315,
+    515
+   ],
+   "legend": 215
+  },
+  {
+   "pos": 115,
+   "label": "Keypad .",
+   "control": 116,
+   "illumination": [
+    116,
+    316,
+    516
+   ],
+   "legend": 216
+  },
+  {
+   "label": "Dimmer",
+   "control": 117
+  },
+  {
+   "label": "Volume",
+   "control": 118
+  }
+ ],
+ "screens": [
+  {
+   "label": "Display",
+   "screen": 1,
+   "overlay": 1
+  }
+ ]
+}

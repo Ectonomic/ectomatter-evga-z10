@@ -9,11 +9,17 @@ SPDX-FileCopyrightText = "2026 Ectonomic LLC"
 SPDX-License-Identifier = "GPL-3.0-only"
 
 [[annotations]]
-path = ["cores/evga-z10/fonts/BarlowSemiCondensed-SemiBold.ttf", "cores/evga-z10/fonts/OFL.txt"]
+path = ["fonts/BarlowSemiCondensed-SemiBold.ttf", "fonts/OFL.txt"]
 SPDX-FileCopyrightText = "2017 The Barlow Project Authors (https://github.com/jpt/barlow)"
 SPDX-License-Identifier = "OFL-1.1"
 
 [[annotations]]
-path = ["cores/evga-z10/fonts/Z10Symbols-Bold.ttf", "cores/evga-z10/fonts/DejaVu-LICENSE.txt"]
+path = ["fonts/Z10Symbols-Bold.ttf", "fonts/DejaVu-LICENSE.txt"]
 SPDX-FileCopyrightText = ["2003 Bitstream, Inc.", "2006 Tavmjong Bah"]
 SPDX-License-Identifier = "Bitstream-Vera AND LicenseRef-Arev"
+
+# EVGA's E, from Wikimedia Commons (File:EVGA_Logo.svg), drawn on the Z10's G/PC button
+[[annotations]]
+path = ["tools/z10-art/from/evga-e.svg"]
+SPDX-FileCopyrightText = "EVGA Corporation (the mark); Wikimedia Commons (the drawing)"
+SPDX-License-Identifier = "CC0-1.0"

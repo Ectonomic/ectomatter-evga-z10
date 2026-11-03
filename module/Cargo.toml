@@ -13,7 +13,7 @@ publish = false
 crate-type = ["cdylib"]
 
 [dependencies]
-evga-z10 = { path = "../../../crates/evga-z10", default-features = false }
+evga-z10 = { path = "../crates/evga-z10", default-features = false }
 # the protocol's words for what a press sent
 ectomatter-protocol = { path = "../../../crates/ectomatter-protocol" }
 serde_json = "1"

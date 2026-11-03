@@ -1,10 +1,10 @@
-# The libraries this package's module is built from, as one workspace, so
-# each finds the settings it shares with the rest of Ectomatter. The module,
-# in its folder's module/, is a workspace of its own: it builds only for
-# WebAssembly (tools/build-module.sh).
+# This package's own libraries, as one workspace, so each finds the settings
+# it shares with the rest of Ectomatter. The module, in module/, is a
+# workspace of its own: it builds only for WebAssembly, inside Ectomatter's
+# repository (README.md).
 [workspace]
 resolver = "3"
-members = ["crates/ectomatter-protocol", "crates/evga-z10"]
+members = ["crates/evga-z10"]
 
 [workspace.package]
 edition = "2024"
